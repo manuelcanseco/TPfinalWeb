@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pulgarcito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="fuente.css">
+</head>
+
+<body>
+    <div>
+        <header class="fixed-top">
+            <nav class="bg-black opacity-75">
+                <ul class="nav text-white d-flex justify-content-between align-items-center">
+                    <li class="ps-2 pt-1 vnav-item ">
+                        <a href="/" class="nav-link active text-white text-">Pulgarcito</a>
+                    </li>
+                    <div class="d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#Proceso">Proceso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#Aventura">Aventura</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page"
+                                href="#Integrantes">Integrantes</a>
+                        </li>
+                    </div>
+
+                </ul>
+            </nav>
+        </header>
+
+        <main class="pt-5" style="background-color: #ECDCBD;">
+            <div class="py-4 d-flex flex-column justify-content-center align-items-center text-center "
+                style="background-image: url('img/banner.webp');  background-size: cover; min-height: 73vh;">
+                <h1>TP FINAL Proyectos Web</h1>
+                <p class="fs-3">
+                    Las aventuras de Pulgarcito 
+                </p>
+                <p>Por Manuel Canseco</p>
+            </div>
+            <div class="container ">
+                <br class="mt-5" id="Proceso">
+                <div class="py-5">
+                    <h1>PROCESO</h1>
+                    <ul>
+                        <li>El proyecto comenzó con la definición del diagrama de flujo de la historia. Así se logró
+                            marcar cómo iba a avanzar la aventura.</li>
+                        <li>Una vez definida la estructura de la aventura, se prepararon los textos para cada una de las
+                            escenas, se crearon las imágenes para cada una de estas y se buscó una música para generar
+                            más inmersión.</li>
+                        <li>Por último, la programación se llevó a cabo utilizando p5.js. Se estructuró la carga de
+                            todos los elementos (imágenes, texto y sonido). A la par, se implementó la lógica de
+                            detección de clics y navegación entre escenas.</li>
+                    </ul>
+                </div>
+                <hr class="mb-5" id="Aventura">
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Aventura Grafica: Pulgarcito</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe src="p5/index.html" frameborder="0" width="100%" height="490"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <h1>AVENTURA</h1>
+                    <div class="d-flex align-items-center">
+                        <img src="img/escena4.webp" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="w-50" alt="Iniciar Aventura">
+                        <div>
+                            <h2 class="ps-5">Sinopsis:</h2>
+                            <p class="ps-5 ">Esta es la historia de Pulgarcito, el menor y más ingenioso de siete
+                                hermanos, quienes son forzados a adentrarse en el bosque debido a la extrema pobreza de
+                                su familia. Pulgarcito toma la iniciativa de esta aventura, buscando no solo su
+                                supervivencia, sino la manera de salvar a su familia de la miseria. En el corazón del
+                                bosque, él y sus hermanos se encontrarán con obstáculos insalvables y deberán enfrentar
+                                decisiones cruciales que determinarán su destino y el éxito de su misión.</p>
+                            <p class="ps-5 ">
+                                Te invitamos a sumergirte en Las Aventuras de Pulgarcito y usar tu astucia para guiarlo
+                                a tomar las decisiones cruciales que lo salvarán de los peligros del bosque y lo
+                                ayudarán a rescatar a su familia de la miseria; haz click en la imagen para comenzar
+                                este desafío interactivo.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <hr class="mb-5" id="Integrantes">
+
+                <div class="row pb-4 mt-4 justify-content-center">
+                    <div class="col-12 col-md-8 d-flex flex-column align-items-center">
+                        <h2 class="mb-4">Integrantes</h2>
+                        <div class="d-flex align-items-center justify-content-center">
+
+                            <img src="img/yo.webp" class="img-fluid rounded w-25" alt="Foto Manuel Canseco"
+                                data-bs-toggle="collapse" data-bs-target="#manuelInfo" aria-expanded="true"
+                                aria-controls="manuelInfo" style="cursor: pointer; object-fit: cover;">
+
+                            <div class="collapse ms-3" id="manuelInfo">
+                                <div class="p-3 rounded text-end text-light" style="background-color: #714f29;">
+                                    <p class="mb-0 small" style="color: #fff;">
+                                        <strong>Manuel Canseco</strong>
+                                        <br>
+
+                                        Legajo: 118984/0
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-dark text-white text-center pt-3 h-25 w-full">
+            <div class="d-flex justify-content-center ">
+                <p>
+                    &copy; Manuel Canseco 118984/0
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+h1, h2, h3 {
+    font-family: 'MedievalSharp', cursive;
+    font-weight: 1000;
+} 
+p, a, span, li{
+    font-family: 'Source Serif 4', serif;
+}
